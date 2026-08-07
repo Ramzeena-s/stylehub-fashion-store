@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+    <div class="logo">StyleHub</div>
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+
+        <input type="text" id="search" placeholder="Search...">
+
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-moon" id="dark-mode"></i>
+
+       <div class="cart" id="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+</div>
+    </div>
+
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <h1>New Fashion Collection 2026</h1>
+
+        <p>Discover premium fashion for every occasion.</p>
+
+        <a href="#" class="btn">Shop Now</a>
+
+    </div>
+
+</section>
+
+<!-- Categories -->
+<section id="categories" class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-container">
+
+    <div class="card" data-category="women">
+    <i class="fa-regular fa-heart wishlist"></i>
+    <img src="images/dress.jpg" alt="Floral Dress">
+    <h3>Floral Dress</h3>
+    <p>₹1499</p>
+     <div class="rating">
+        ★★★★☆
+    </div>
+
+    <button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="men">
+    <i class="fa-regular fa-heart wishlist"></i>
+    <img src="images/hoodie.jpg" alt="Hoodie">
+    <h3>Hoodie</h3>
+    <p>₹1799</p>
+     <div class="rating">
+        ★★★★☆
+    </div>
+
+    <button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="accessories">
+    <i class="fa-regular fa-heart wishlist"></i>
+    <img src="images/watch.jpg" alt="Smart Watch">
+    <h3>Smart Watch</h3>
+    <p>₹3999</p>
+     <div class="rating">
+        ★★★★☆
+    </div>
+
+    <button>Add to Cart</button>
+</div>
+    </div>
+
+</section>
+
+<!-- Products -->
+<section id="products" class="products">
+    
+
+    <h2>Featured Products</h2>
+    <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="women">Women</button>
+    <button class="filter-btn" data-filter="men">Men</button>
+    <button class="filter-btn" data-filter="accessories">Accessories</button>
+</div>
+
+    <div class="product-grid">
+
+        <div class="card" data-category="women">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/dress.jpg" alt="Dress">
+            <h3>Floral Dress</h3>
+            <p>₹1499</p>
+             <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="men">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/hoodie.jpg" alt="Hoodie">
+            <h3>Hoodie</h3>
+            <p>₹1799</p>
+             <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="men">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/jeans.jpg" alt="Jeans">
+            <h3>Blue Jeans</h3>
+            <p>₹1399</p>
+             <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="men">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/shoe.jpg" alt="Shoes">
+            <h3>Sneakers</h3>
+            <p>₹2999</p>
+             <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="accessories">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/watch.jpg" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>₹3999</p> 
+            <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="accessories">
+            <i class="fa-regular fa-heart wishlist"></i>
+            <img src="images/bag.jpg" alt="Bag">
+            <h3>Leather Bag</h3>
+            <p>₹2499</p>
+             <div class="rating">
+        ★★★★☆
+    </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+
+    <h2>Stay Updated</h2>
+
+    <p>Subscribe for the latest fashion updates.</p>
+
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>StyleHub</h3>
+            <p>📍 Coimbatore, Tamil Nadu</p>
+            <p>📞 +91 7012056223</p>
+            <p>📧 support@stylehub.com</p>
+        </div>
+
+        <form>
+
+
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+
+        </form>
+
+    </div>
+
+</section>
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cart-sidebar">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <h3>Total: ₹<span id="total-price">0</span></h3>
+    
+    <button id="checkout" class="btn">Checkout</button>
+
+
+    <button id="close-cart" class="btn">Close</button>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>© 2026 StyleHub Fashion Store. All Rights Reserved.</p>
+
+</footer>
+<!-- Back to Top Button -->
+<button id="topBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="script.js"></script>
+
+</body>
+</html>
